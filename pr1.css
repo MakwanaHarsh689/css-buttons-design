@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #222;
+  background: #f4f7fb;
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+p {
+  margin-bottom: 32px;
+  color: #64748b;
+}
+
+.button-box {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #334155;
+}
+
+button {
+  margin: 8px;
+  padding: 12px 22px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.primary {
+  color: #fff;
+  background: #2563eb;
+}
+.primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.success {
+  color: #fff;
+  background: #16a34a;
+}
+.success:hover:not(:disabled) {
+  background: #15803d;
+}
+
+.danger {
+  color: #fff;
+  background: #dc2626;
+}
+.danger:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+.outline {
+  color: #2563eb;
+  background: transparent;
+  border-color: #2563eb;
+}
+.outline:hover:not(:disabled) {
+  color: #fff;
+  background: #2563eb;
+}
+
+.small {
+  padding: 7px 14px;
+  font-size: 13px;
+}
+.medium {
+  padding: 12px 22px;
+  font-size: 16px;
+}
+.large {
+  padding: 16px 30px;
+  font-size: 19px;
+}
+
+.rounded {
+  color: #fff;
+  background: #7c3aed;
+  border-radius: 999px;
+}
+
+.gradient {
+  color: #fff;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.shadow {
+  color: #fff;
+  background: #0f766e;
+  box-shadow: 0 6px 14px rgba(15, 118, 110, 0.3);
+}
+
+.disabled,
+button:disabled {
+  color: #64748b;
+  background: #e2e8f0;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 24px 12px;
+  }
+  .button-box {
+    padding: 18px 10px;
+  }
+  button {
+    margin: 6px 3px;
+  }
+}
